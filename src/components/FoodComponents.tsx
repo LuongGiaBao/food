@@ -14,21 +14,7 @@ export default function Home() {
     }
   };
 
-  const handleSubmit = async () => {
-    const res = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email }),
-    });
-
-    if (res.ok) {
-      alert("Your selection has been sent!");
-    } else {
-      alert("Something went wrong!");
-    }
-  };
+ 
  
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
@@ -48,12 +34,7 @@ export default function Home() {
           </li>
         ))}
       </ul>
-      <button
-        className="bg-blue-500 text-white px-4 py-2 rounded"
-        onClick={requestOtp}
-      >
-        Send selection
-      </button>
+     
     </div>
   );
 }
