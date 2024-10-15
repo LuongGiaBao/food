@@ -14,11 +14,10 @@ export default function Home() {
     }
   };
 
- 
- 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <h1 className="text-2xl mb-4">Select the dishes you want to eat</h1>
+      <h2 className="text-3xl font-bold">heello</h2>
       <ul className="mb-4">
         {dishes.map((dish) => (
           <li key={dish}>
@@ -34,7 +33,6 @@ export default function Home() {
           </li>
         ))}
       </ul>
-     
     </div>
   );
 }
